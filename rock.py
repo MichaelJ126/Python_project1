@@ -5,7 +5,7 @@ player_options = ["rock", "paper", "scissors"]
 
 def check_rock(option):
     if option.lower() == "rock" and random.choice(cpu_options) == "paper":
-        print(f"You lose, CPU picked paper" )
+        print("You lose, CPU picked paper" )
     elif option.lower() == "rock" and random.choice(cpu_options) == "rock":
         print("Tie")
     else:
@@ -17,13 +17,13 @@ def check_paper(option):
     elif option.lower() == "paper" and random.choice(cpu_options) == "rock":
         print("You win! FINALLY!")
     elif option.lower() == "paper" and random.choice(cpu_options) == "scissors":
-        print(f"You lose, CPU picked scissors")
+        print("You lose, CPU picked scissors")
 
 def check_scissors(option):
     if option.lower() == "scissors" and random.choice(cpu_options) == "paper":
         print("You win! FINALLY!")
     elif option.lower() == "scissors" and random.choice(cpu_options) == "rock":
-        print(f"You lose, CPU picked rock")
+        print("You lose, CPU picked rock")
     elif option.lower() == "scissors" and random.choice(cpu_options) == "scissors":
         print("Tie")
 
