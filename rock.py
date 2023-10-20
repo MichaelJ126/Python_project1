@@ -38,6 +38,16 @@ while True:
         if player_input.strip().lower() == 'rock':
             pOption = 'rock'
             check_rock(pOption)
+
+        elif player_input.strip().lower() == 'paper':
+            pOption = 'paper'
+            check_paper(pOption)
+
+        elif player_input.strip().lower() == 'scissors':
+            pOption = 'scissors'
+            check_scissors(pOption)
+
+
         elif player_input.strip().lower() == "quit":
             print("Thank you for playing!!! ")
             False
